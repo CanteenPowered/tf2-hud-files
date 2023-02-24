@@ -24,13 +24,13 @@ if __name__ == '__main__':
     login_password = os.environ['STEAM_PASSWORD']
 
     # Download OSX client files
-    # subprocess.run([cmd_depotdownloader,
-    #     '-username',    login_username,
-    #     '-password',    login_password,
-    #     '-app',         '440',
-    #     '-dir',         os.path.join(basedir, 'files'),
-    #     '-filelist',    os.path.join(basedir, 'update_filefilter.txt'),
-    # ])
+    subprocess.run([cmd_depotdownloader,
+        '-username',    login_username,
+        '-password',    login_password,
+        '-app',         '440',
+        '-dir',         os.path.join(basedir, 'files'),
+        '-filelist',    os.path.join(basedir, 'update_filefilter.txt'),
+    ])
 
     # Extract game version
     with open(os.path.join(basedir, 'files', 'tf', 'steam.inf'), 'r') as f1:
