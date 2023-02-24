@@ -1,0 +1,3 @@
+regex:tf/tf2_misc_.*\.vpk$
+regex:hl2/hl2_misc_.*\.vpk$
+tf/steam.inf
